@@ -53,6 +53,8 @@ function setup() {
      image(img, 10, height-100, 100, 52)
 
      //draw total price
+     noStroke();
+     fill(255)
      textSize(24);
      text("Total:$" + price, -90, 30);
 };
