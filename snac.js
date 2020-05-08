@@ -57,7 +57,7 @@
      noStroke();
      fill(255);
      textSize(10);
-     text(total + price, 10,height - 70);
+     text(total + price, 10,70);
 };
 
 
