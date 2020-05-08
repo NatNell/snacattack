@@ -47,8 +47,8 @@ function setup() {
      textAlign(CENTER);
      text(label, width / 2, height - 60);
    
-     image(img, 10, height-100, 100, 52, align="center")
-      };
+     image(img, 10, height-100, 100, 52)
+};
 
 
  // Get a prediction for the current video frame
