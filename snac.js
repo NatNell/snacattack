@@ -56,7 +56,7 @@
      //draw total price label
      fill(255)
      textSize(24);
-     text(total + price, -90, 30);
+     text(total + price, 10, 40);
 };
 
 
