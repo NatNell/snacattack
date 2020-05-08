@@ -40,7 +40,7 @@ function setup() {
      background(167,42,42)
      // Draw the video
      image(video, 0, 0);
-
+     
      // Draw the label
      fill(255);
      textSize(20);
