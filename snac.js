@@ -8,7 +8,7 @@
  let flippedVideo;
  // To store the classification
  let label = "";
-let img;
+ let img;
  // Load the model first
  function preload() {
      classifier = ml5.imageClassifier(imageModelURL + 'model.json');
@@ -19,7 +19,7 @@ let img;
  var price = 0;
  }
 
-function setup() {
+ function setup() {
      createCanvas(400, 660);
      // Create the video
      //video = createCapture(VIDEO);
