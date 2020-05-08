@@ -38,13 +38,12 @@ function setup() {
 
  function draw() {
      background(167,42,42)
-     background(displayWidth, displayHeight);
      // Draw the video
      image(video, 0, 0);
 
      // Draw the label
      fill(255);
-     textSize(30);
+     textSize(20);
      textAlign(CENTER);
      text(label, width / 2, height - 60);
    
@@ -67,11 +66,11 @@ function setup() {
      }
      // The results are in an array ordered by confidence.
      // console.log(results[0]);
-     if(results[0].confidence>0.85){
+     if(results[0].confidence>0.91){
      label = results[0].label;
      }
      else{
-     label = "...";
+     label = "—————";
      }
      flippedVideo.remove();
      // Classifiy again!
