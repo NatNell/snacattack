@@ -37,16 +37,22 @@ function setup() {
  }
 
  function draw() {
-     background(0);
+     background(167,42,42);
      // Draw the video
      image(video, 0, 0);
 
      // Draw the label
-     fill(167,42,42);
+     fill(255);
      textSize(30);
      textAlign(CENTER);
      text(label, width / 2, height - 60);
-     image(img, 10, height-100, 100, 52);
+   
+     image(img, 10, height-100, 100, 52)
+     img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      };
  }
 
  // Get a prediction for the current video frame
