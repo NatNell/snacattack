@@ -47,13 +47,9 @@ function setup() {
      textAlign(CENTER);
      text(label, width / 2, height - 60);
    
-     image(img, 10, height-100, 100, 52)
-     img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+     image(img, 10, height-100, 100, 52, align="center")
       };
- }
+
 
  // Get a prediction for the current video frame
  function classifyVideo() {
