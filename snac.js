@@ -54,7 +54,8 @@
      image(img, 10, height-100, 100, 52)
 
      //draw total price label
-     fill(255)
+     noStroke();
+     fill(255);
      textSize(24);
      text(total + price, 10,height - 70);
 };
