@@ -42,7 +42,7 @@ function setup() {
      image(video, 0, 0);
 
      // Draw the label
-     fill(167,42,42);
+     fill(255);
      textSize(30);
      textAlign(CENTER);
      text(label, width / 2, height - 60);
