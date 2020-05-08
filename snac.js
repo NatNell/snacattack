@@ -38,7 +38,7 @@ function setup() {
 
  function draw() {
      background(167,42,42)
-     createCanvas(displayWidth, displayHeight);
+     background(displayWidth, displayHeight);
      // Draw the video
      image(video, 0, 0);
 
