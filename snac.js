@@ -48,7 +48,7 @@
      // Draw the label
      fill(255);
      textSize(20);
-     textAlign(CENTER);
+     textAlign(center);
      text(label, width / 2, height - 60);
    
      image(img, 10, height-100, 100, 52)
@@ -56,7 +56,7 @@
      //draw total price label
      fill(255)
      textSize(24);
-     text(total + price, 10, 40);
+     text(total + price, 10,height - 70);
 };
 
 
