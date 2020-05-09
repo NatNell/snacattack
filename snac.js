@@ -74,6 +74,7 @@ function classifyVideo() {
 // When we get a result
 function gotResult(error, results,) {
      // If there is an error
+     setInterval(gotResult, 2000);
      if (error) {
         console.error(error);
         return;
@@ -90,5 +91,4 @@ function gotResult(error, results,) {
      flippedVideo.remove();
      // Classifiy again!
      classifyVideo();
-}
-setInterval(gotResult, 1500);
+    }
