@@ -61,7 +61,7 @@ function draw() {
     textFont(Lato);
     textSize(20);
     textAlign(CENTER);
-    text(total + price, height - 80);
+    text(total + price, width / 2,height - 80);
 }
 
 // Get a prediction for the current video frame
@@ -81,10 +81,6 @@ function gotResult(error, results) {
     // console.log(results[0]);
     if(results[0].confidence>0.90){
     label = results[0].label;
-    price++;
-    }
-    if(results[OREO].confidence>0.90){
-    label = results[OREO].label;
     price++;
     }
     else{
