@@ -15,7 +15,7 @@ function preload() {
     img = loadImage('data/logo.jpg');
 }
 // pricing LABEL
-let total = "Totäl : $";
+let total = "Totäl :$";
 var price = 0;
 
 function setup() {
@@ -51,13 +51,11 @@ function draw() {
 
     // Draw the label
     fill(255);
-    textfont('Lato');
     textSize(25);
     textAlign(CENTER);
     text(label, width / 2, height - 120);
     //draw total price label
     fill(255);
-    textfont('Geo');
     textSize(20);
     text(total + price, 50, height - 50);
 }
