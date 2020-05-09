@@ -19,7 +19,7 @@ let total = "Totäl :$";
 var price = 0;
 
 function setup() {
-    createCanvas(displaywidth, displayheight);
+    createCanvas(420, 700);
     // Create the video
     //video = createCapture(VIDEO);
     
@@ -30,11 +30,13 @@ function setup() {
             facingMode: "environment"
         },
          mandatory: {
+            minWidth: 720,
+            minHeight: 1280,
             framerate: 30
         }
     };
     video = createCapture(constraints);
-    video.size(420, displayheight / 2);
+    video.size(420, 700);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
