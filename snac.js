@@ -53,13 +53,13 @@ function draw() {
     fill(167,42,42);
     textFont(Lato);
     textSize(25);
-    textalign(CENTER)
+    textalign(CENTER);
     text(label, width / 2, height - 220);
     //draw total price label
     fill(167,42,42);
     textFont(Lato);
     textSize(20);
-    textalign(CENTER)
+    textalign(CENTER);
     text("Totäl : $"+ price, width / 2,  height - 80);
 }
 
