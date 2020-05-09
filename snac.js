@@ -19,7 +19,7 @@ let total = "Totäl :$";
 var price = 0;
 
 function setup() {
-    createCanvas(displayWidth, displayHeight);
+    createCanvas(412, 730);
     // Create the video
     //video = createCapture(VIDEO);
     
@@ -31,7 +31,7 @@ function setup() {
         }
     };
     video = createCapture(constraints);
-    video.size(400, 660);
+    video.size(412, 730);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
