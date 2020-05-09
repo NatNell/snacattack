@@ -46,22 +46,22 @@ function setup() {
 }
 
 function draw() {
-    background(167,42,42);
+    background(245,245,245);
     // Draw the video
     image(video, 0, 0);
 
     // Draw the label
-    fill(255);
+    fill(167,42,42);
     textFont(Lato);
     textSize(25);
     textAlign(CENTER);
     text(label, width / 2, height - 220);
     //draw total price label
-    fill(255);
+    fill(167,42,42);
     textFont(Lato);
     textSize(20);
     textAlign(CENTER);
-    text(total + price, height - 100);
+    text(total + price, height - 80);
 }
 
 // Get a prediction for the current video frame
@@ -81,6 +81,7 @@ function gotResult(error, results) {
     // console.log(results[0]);
     if(results[0].confidence>0.90){
     label = results[0].label;
+    price++;
     }
     if(results[OREO].confidence>0.90){
     label = results[OREO].label;
