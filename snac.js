@@ -9,6 +9,7 @@ let flippedVideo;
 // To store the classification
 let label = "";
 let img;
+let Lato;
 // Load the model first
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
@@ -46,18 +47,18 @@ function setup() {
 }
 
 function draw() {
-    background(245);
+    background(167,42,42);
     // Draw the video
     image(video, 0, 0);
 
     // Draw the label
-    fill(167,42,42);
+    fill(245);
     textFont(Lato);
     textSize(25);
     textAlign(center);
     text(label, width / 2, height - 220);
     //draw total price label
-    fill(167,42,42);
+    fill(245);
     textFont(Lato);
     textSize(20);
     textAlign(center);
