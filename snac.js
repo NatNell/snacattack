@@ -16,7 +16,7 @@ function preload() {
     Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
-let total ="Totäl : $"
+let total = "Totäl : $"
 var price = 0;
 
 function setup() {
