@@ -34,7 +34,7 @@ function setup() {
          mandatory: {
             minWidth: 1920,
             minHeight: 1080,
-            minframerate: 60
+            minframerate: 30
         }
     };
     video = createCapture(constraints);
@@ -93,7 +93,7 @@ function gotResult(error, results) {
 
 //Price counter
 function Cashier(){
-if(label = "FANTAORANGE","OREO","KITKAT");
+if(label = FANTAORANGE);
 price = +0.5
 }
 
