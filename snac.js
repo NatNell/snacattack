@@ -39,6 +39,7 @@ function setup() {
     };
     video = createCapture(constraints);
     video.size(displayWidth, 600);
+    video.border-radius(25);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
