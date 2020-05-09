@@ -53,13 +53,13 @@ function draw() {
     fill(167,42,42);
     textFont(Lato);
     textSize(25);
-    textalign(center)
+    textalign(CENTER)
     text(label, width / 2, height - 220);
     //draw total price label
     fill(167,42,42);
     textFont(Lato);
     textSize(20);
-    textalign(center)
+    textalign(CENTER)
     text("Totäl : $"+ price, width / 2,  height - 80);
 }
 
@@ -80,6 +80,7 @@ function gotResult(error, results) {
     // console.log(results[0]);
     if(results[0].confidence>0.9){
     label = results[0].label;
+    price++;
     }
     else{
     label = "........";
