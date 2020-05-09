@@ -72,7 +72,7 @@ function classifyVideo() {
 }
 
 // When we get a result
-function gotResult(error, results) {
+function gotResult(error, results,) {
     // If there is an error
     if (error) {
         console.error(error);
@@ -82,6 +82,7 @@ function gotResult(error, results) {
     // console.log(results[0]);
     if(results[0].confidence>0.9){
     label = results[0].label;
+    price = (price + 1);
     }
     else{
     label = "........";
