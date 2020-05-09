@@ -34,7 +34,7 @@ function setup() {
          mandatory: {
             minWidth: 1920,
             minHeight: 1080,
-            minframerate: 30
+            minframerate: 60
         }
     };
     video = createCapture(constraints);
@@ -84,15 +84,15 @@ function gotResult(error, results) {
     label = results[0].label;
     }
     
-    if(results[OREO].confidence>0.9){
+    else if(results[OREO].confidence>0.9){
     price = +0.5 ;
     }
 
-    if(results[KITKAT].confidence>0.9){
+    else if(results[KITKAT].confidence>0.9){
     price = +0.5 ;
     }
 
-    if(results[FANTAORANGE].confidence>0.9){
+    else if(results[FANTAORANGE].confidence>0.9){
     price = +1 ;
     }  
 
