@@ -73,20 +73,26 @@ function classifyVideo() {
 
 // When we get a result
 function gotResult(error, results,) {
-    // If there is an error
-    if (error) {
+     // If there is an error
+     if (error) {
         console.error(error);
         return;
     }
-    // The results are in an array ordered by confidence.
+     // The results are in an array ordered by confidence.
     // console.log(results[0]);
-    if (results[0].confidence>90) {
-    label = (results[0].label);
+     if (results[0].confidence>90) {
+     label = (results[0].label);
+     }
+     else{
+     label = "........";
+     }
+     flippedVideo.remove();
+     // Classifiy again!
+     classifyVideo();
+}
+function pricing(){
+    if (label = "FANTAORANGE"){
+        price = (price + 1);
     }
-    else{
-    label = "........";
-    }
-    flippedVideo.remove();
-    // Classifiy again!
-    classifyVideo();
+    
 }
