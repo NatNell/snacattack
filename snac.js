@@ -49,7 +49,6 @@ function draw() {
     textSize(20);
     textAlign(CENTER);
     text(label, width / 2, height - 60);
-    image(img, 10, height-100, 100, 52);
     //draw total price label
     fill(255);
     textSize(20);
