@@ -83,6 +83,19 @@ function gotResult(error, results) {
     if(results[0].confidence>0.9){
     label = results[0].label;
     }
+    
+    if(results[OREO].confidence>0.9){
+    price = +0.5 ;
+    }
+
+    if(results[KITKAT].confidence>0.9){
+    price = +0.5 ;
+    }
+
+    if(results[FANTAORANGE].confidence>0.9){
+    price = +1 ;
+    }  
+
     else{
     label = "........";
     }
