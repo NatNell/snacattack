@@ -14,9 +14,9 @@
      classifier = ml5.imageClassifier(imageModelURL + 'model.json');
      img = loadImage('data/logo.jpg');
 
- // price counter
-// let total ="Total:$"
-// var price = 0;
+ //price counter
+ let total ="Total:$"
+ var price = 0;
  }
 
  function setup() {
@@ -50,14 +50,10 @@
      textSize(20);
      textAlign(center);
      text(label, width / 2, height - 60);
-   
      image(img, 10, height-100, 100, 52)
-
      //draw total price label
-     //noStroke();
-     //fill(255);
-     //textSize(10);
-     //text(total + price, 10,70);
+     fill(255);
+     text(total + price, 10,70);
 };
 
 
