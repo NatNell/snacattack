@@ -94,6 +94,6 @@ function gotResult(error, results) {
 //Price counter
 function Cashier(){
 if(label = FANTAORANGE);
-price = +0.5
+price = ++0.5
 }
 
