@@ -53,12 +53,14 @@ function draw() {
     fill(167,42,42);
     textFont(Lato);
     textSize(25);
-     text(label, displaywidth / 2, height - 60);
+    textAlign(center);
+    text(label, width / 2, height - 220);
     //draw total price label
     fill(167,42,42);
     textFont(Lato);
     textSize(20);
-    text("Totäl : $" + price, displaywidth / 2,  height - 80);
+    textAlign(center);
+    text("Totäl : $" + price, 50,  height - 80);
 }
 
 // Get a prediction for the current video frame
