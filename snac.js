@@ -82,7 +82,6 @@ function gotResult(error, results,) {
     // console.log(results[0]);
      if (results[0].confidence>.9){
      label = (results[0].label);
-     price = (price + 1);
      }
      else{
      label = ".  .  .";
@@ -91,6 +90,7 @@ function gotResult(error, results,) {
      // Classifiy again!
      classifyVideo();
 }
+//calculator
 function calculator(){
     if (results[0].confidence>.9){
         label = (results[0].label);
