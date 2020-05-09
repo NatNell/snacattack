@@ -34,7 +34,7 @@ function setup() {
          mandatory: {
             minWidth: 1920,
             minHeight: 1080,
-            framerate: 30
+            minframerate: 30
         }
     };
     video = createCapture(constraints);
