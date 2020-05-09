@@ -13,12 +13,14 @@ let img;
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
     img = loadImage('data/logo.jpg');
+    Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
 let total = "Totäl :$";
 var price = 0;
 
 function setup() {
+    pixeldensity(3);
     createCanvas(displayWidth, displayHeight);
     // Create the video
     //video = createCapture(VIDEO);
@@ -51,13 +53,15 @@ function draw() {
 
     // Draw the label
     fill(255);
+    textFont(Lato);
     textSize(25);
     textAlign(CENTER);
-    text(label, width / 2, height - 120);
+    text(label, width / 2, height - 220);
     //draw total price label
     fill(255);
+    textFont(Lato);
     textSize(20);
-    text(total + price, 50, height - 50);
+    text(total + price, 50, height - 80);
 }
 
 // Get a prediction for the current video frame
