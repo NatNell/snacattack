@@ -30,9 +30,9 @@ function setup() {
             facingMode: "environment"
         },
          mandatory: {
-            minWidth: 720,
-            minHeight: 1280,
-            framerate: 30
+            minWidth: displayWidth,
+            minHeight: displayWidth,
+            framerate: 60
         }
     };
     video = createCapture(constraints);
