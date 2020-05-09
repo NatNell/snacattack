@@ -55,14 +55,14 @@ function draw() {
     fill(245);
     textFont(Lato);
     textSize(25);
-    textAlign(center);
+    textAlign(CENTER, CENTER);
     text(label, width / 2, height - 220);
     //draw total price label
     fill(245);
     textFont(Lato);
     textSize(20);
-    textAlign(center);
-    text(total + price, 50,  height - 80);
+    textAlign(CENTER, CENTER);
+    text(total + price, width / 2,  height - 80);
 }
 
 // Get a prediction for the current video frame
