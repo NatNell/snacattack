@@ -39,7 +39,6 @@ function setup() {
     };
     video = createCapture(constraints);
     video.size(displayWidth, 600);
-    video.border-radius(25);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
@@ -83,6 +82,7 @@ function gotResult(error, results) {
     // console.log(results[0]);
     if(results[0].confidence>0.9){
     label = results[0].label;
+    price = +0.5
     }
     else{
     label = "........";
@@ -91,7 +91,6 @@ function gotResult(error, results) {
     // Classifiy again!
     classifyVideo();
 }
-
 //Price counter
 function Cashier(){
 if(label = FANTAORANGE);
