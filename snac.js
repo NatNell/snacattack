@@ -38,7 +38,7 @@ function setup() {
         }
     };
     video = createCapture(constraints);
-    video.size(displayWidth, 700);
+    video.size(displayWidth, 800);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
@@ -82,6 +82,7 @@ function gotResult(error, results,) {
     // console.log(results[0]);
      if (results[0].confidence>.9){
      label = (results[0].label);
+     price = (price + 1);
      }
      else{
      label = ".  .  .";
@@ -89,10 +90,4 @@ function gotResult(error, results,) {
      flippedVideo.remove();
      // Classifiy again!
      classifyVideo();
-}
-function pricing(){
-    if (label ="FANTAORANGE"){
-        price = (price + 1);
-    }
-    
 }
