@@ -15,11 +15,11 @@ function preload() {
     img = loadImage('data/logo.jpg');
 }
 // pricing LABEL
-let total = "Total:$";
+let total = "Totäl :$";
 var price = 0;
 
 function setup() {
-    createCanvas(400, 660);
+    createCanvas(displayWidth, displayHeight);
     // Create the video
     //video = createCapture(VIDEO);
     
@@ -53,7 +53,7 @@ function draw() {
     //draw total price label
     fill(255);
     textSize(20);
-    text(total + price, 40,550);
+    text(total + price, 50,580);
 }
 
 // Get a prediction for the current video frame
