@@ -19,7 +19,8 @@ let total = "Totäl :$";
 var price = 0;
 
 function setup() {
-    createCanvas(displayWidth, displayHeight);
+    createCanvas(displayWidth, 700);
+    pixelDensity(5);
     // Create the video
     //video = createCapture(VIDEO);
     
@@ -31,7 +32,6 @@ function setup() {
         }
     };
     video = createCapture(constraints);
-    video.pixeldensity(3);
     video.size(400, 730);
     video.hide();
 
