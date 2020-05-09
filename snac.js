@@ -62,7 +62,7 @@ function draw() {
     textFont(Lato);
     textSize(20);
     textAlign(CENTER, CENTER);
-    text(total + price, width / 2,  height - 180);
+    text(total + price, width / 2,  height - 280);
 }
 
 // Get a prediction for the current video frame
@@ -83,19 +83,6 @@ function gotResult(error, results) {
     if(results[0].confidence>0.9){
     label = results[0].label;
     }
-    
-    else if(results[OREO].confidence>0.9){
-    price = +0.5 ;
-    }
-
-    else if(results[KITKAT].confidence>0.9){
-    price = +0.5 ;
-    }
-
-    else if(results[FANTAORANGE].confidence>0.9){
-    price = +1 ;
-    }  
-
     else{
     label = "........";
     }
@@ -103,3 +90,10 @@ function gotResult(error, results) {
     // Classifiy again!
     classifyVideo();
 }
+
+//Price counter
+function Cashier(){
+if(label = "OREO","KITKAT");
+price = +0.5
+}
+
