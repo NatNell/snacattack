@@ -71,7 +71,7 @@ function gotResult(error, results) {
     }
     // The results are in an array ordered by confidence.
     // console.log(results[0]);
-    if(results[0].confidence>0.85){
+    if(results[0].confidence>0.95){
     label = results[0].label;
     }
     else{
