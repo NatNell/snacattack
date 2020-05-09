@@ -14,6 +14,9 @@ function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
     img = loadImage('data/logo.jpg');
 }
+// pricing LABEL
+let total = "Total:$";
+var price = 0;
 
 function setup() {
     createCanvas(400, 660);
@@ -47,6 +50,10 @@ function draw() {
     textAlign(CENTER);
     text(label, width / 2, height - 60);
     image(img, 10, height-100, 100, 52);
+    //draw total price label
+    fill(255);
+    textSize(12);
+    text(total + price, 10,70);
 }
 
 // Get a prediction for the current video frame
