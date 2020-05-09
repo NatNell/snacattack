@@ -82,7 +82,7 @@ function gotResult(error, results) {
     // console.log(results[0]);
     if(results[0].confidence>0.9){
     label = results[0].label;
-    price = ++0.5
+    price = +1;
     }
     else{
     label = "........";
@@ -90,10 +90,5 @@ function gotResult(error, results) {
     flippedVideo.remove();
     // Classifiy again!
     classifyVideo();
-}
-//Price counter
-function Cashier(){
-if(label = FANTAORANGE);
-price = ++0.5
 }
 
