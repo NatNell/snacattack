@@ -16,6 +16,7 @@ function preload() {
     Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
+let total ="Totäl : $"
 var price = 0;
 
 function setup() {
@@ -45,7 +46,7 @@ function setup() {
 }
 
 function draw() {
-    background(245,245,245);
+    background(245);
     // Draw the video
     image(video, 0, 0);
 
@@ -60,7 +61,7 @@ function draw() {
     textFont(Lato);
     textSize(20);
     textAlign(center);
-    text("Totäl : $" + price, 50,  height - 80);
+    text(total + price, 50,  height - 80);
 }
 
 // Get a prediction for the current video frame
