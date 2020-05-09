@@ -31,6 +31,7 @@ function setup() {
         }
     };
     video = createCapture(constraints);
+    video.pixelDensity(3.0);
     video.size(412, 730);
     video.hide();
 
