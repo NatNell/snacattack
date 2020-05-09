@@ -19,7 +19,7 @@ let total = "Totäl :$";
 var price = 0;
 
 function setup() {
-    createCanvas(420, 700);
+    createCanvas(displayWidth, displayHeight );
     // Create the video
     //video = createCapture(VIDEO);
     
@@ -30,8 +30,8 @@ function setup() {
             facingMode: "environment"
         },
          mandatory: {
-            minWidth: 720,
-            minHeight: 1280,
+            minWidth: 1080,
+            minHeight: 1920,
             framerate: 30
         }
     };
