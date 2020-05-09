@@ -36,7 +36,7 @@ function setup() {
         }
     };
     video = createCapture(constraints);
-    video.size(420, 700);
+    video.size(displayWidth, 700);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
@@ -75,7 +75,7 @@ function gotResult(error, results) {
     }
     // The results are in an array ordered by confidence.
     // console.log(results[0]);
-    if(results[0].confidence>0.95){
+    if(results[0].confidence>0.97){
     label = results[0].label;
     }
     else{
