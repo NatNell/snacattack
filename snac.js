@@ -82,7 +82,6 @@ function gotResult(error, results,) {
     // console.log(results[0]);
     if(results[0].confidence>90){
     label = results[0].label;
-    price = (price + 1);
     }
     else{
     label = "........";
