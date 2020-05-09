@@ -38,7 +38,7 @@ function setup() {
         }
     };
     video = createCapture(constraints);
-    video.size(displayWidth, 600);
+    video.size(displayWidth, 700);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
@@ -56,13 +56,13 @@ function draw() {
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
-    text(label, width / 2, height - 320);
+    text(label, width / 2, height - 220);
     //draw total price label
     fill(167,42,42);
     textFont(Lato);
     textSize(20);
     textAlign(CENTER, CENTER);
-    text(total + price, width / 2,  height - 280);
+    text(total + price, width / 2,  height - 180);
 }
 
 // Get a prediction for the current video frame
