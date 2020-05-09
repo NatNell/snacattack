@@ -80,7 +80,7 @@ function gotResult(error, results,) {
     }
      // The results are in an array ordered by confidence.
     // console.log(results[0]);
-     if (results[0].confidence>90) {
+     if (results[0].confidence>.9) {
      label = (results[0].label);
      }
      else{
@@ -89,4 +89,10 @@ function gotResult(error, results,) {
      flippedVideo.remove();
      // Classifiy again!
      classifyVideo();
+}
+function pricing(){
+    if (label = "FANTAORANGE"){
+        price = (price + 1);
+    }
+    
 }
