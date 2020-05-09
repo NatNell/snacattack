@@ -19,6 +19,7 @@ let total = "Totäl : $";
 var price = 0;
 
 function setup() {
+    pixelDensity(3.0);
     createCanvas(displayWidth, displayHeight );
     // Create the video
     //video = createCapture(VIDEO);
