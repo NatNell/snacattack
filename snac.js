@@ -15,8 +15,8 @@
      img = loadImage('data/logo.jpg');
 
  // price counter
- let total ="Total:$"
- var price = 0;
+// let total ="Total:$"
+// var price = 0;
  }
 
  function setup() {
@@ -54,10 +54,10 @@
      image(img, 10, height-100, 100, 52)
 
      //draw total price label
-     noStroke();
-     fill(255);
-     textSize(10);
-     text(total + price, 10,70);
+     //noStroke();
+     //fill(255);
+     //textSize(10);
+     //text(total + price, 10,70);
 };
 
 
