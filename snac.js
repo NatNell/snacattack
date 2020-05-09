@@ -31,8 +31,8 @@ function setup() {
         }
     };
     video = createCapture(constraints);
+    video.size(400, 400);
     video.pixelDensity(3.0);
-    video.createcanvas(400, 400);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
