@@ -52,8 +52,8 @@ function draw() {
     image(img, 10, height-100, 100, 52);
     //draw total price label
     fill(255);
-    textSize(12);
-    text(total + price, 10,70);
+    textSize(20);
+    text(total + price, 40,550);
 }
 
 // Get a prediction for the current video frame
