@@ -55,13 +55,13 @@ function draw() {
     textFont(Lato);
     textSize(25);
     textAlign(CENTER);
-    text(label, width / 2, height - 220);
+    text(label, height - 220);
     //draw total price label
     fill(167,42,42);
     textFont(Lato);
     textSize(20);
     textAlign(CENTER);
-    text(total + price, width / 2,height - 80);
+    text(total + price, height - 80);
 }
 
 // Get a prediction for the current video frame
@@ -81,7 +81,6 @@ function gotResult(error, results) {
     // console.log(results[0]);
     if(results[0].confidence>0.90){
     label = results[0].label;
-    price = +1;
     }
     else{
     label = "........";
