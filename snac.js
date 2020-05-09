@@ -19,7 +19,7 @@ let total = "Totäl :$";
 var price = 0;
 
 function setup() {
-    createCanvas(412, 730);
+    createCanvas(displaywidth, displayheight);
     // Create the video
     //video = createCapture(VIDEO);
     
@@ -30,11 +30,11 @@ function setup() {
             facingMode: "environment"
         },
          mandatory: {
-            framerate: 60
+            framerate: 30
         }
     };
     video = createCapture(constraints);
-    video.size(412, 730);
+    video.size(displaywidth, displayheight);
     video.hide();
 
     flippedVideo = ml5.flipImage(video)
@@ -55,7 +55,7 @@ function draw() {
     //draw total price label
     fill(255);
     textSize(20);
-    text(total + price, 50,580);
+    text(total + price, 50,height -50);
 }
 
 // Get a prediction for the current video frame
