@@ -90,9 +90,3 @@ function gotResult(error, results,) {
     // Classifiy again!
     classifyVideo();
 }
- function pricing(){
- if(label = FANTAORANG){
- price = (price + 1);
- }
-
-}
