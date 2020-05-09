@@ -91,3 +91,10 @@ function gotResult(error, results,) {
      // Classifiy again!
      classifyVideo();
 }
+function calculator(){
+    if (results[0].confidence>.9){
+        label = (results[0].label);
+        price = (price + 1);
+    }
+}
+setInterval(calculator, 5000);
