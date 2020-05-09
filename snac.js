@@ -93,7 +93,7 @@ function gotResult(error, results) {
 
 //Price counter
 function Cashier(){
-if(label = "OREO","KITKAT");
+if(label = "FANTAORANGE","OREO","KITKAT");
 price = +0.5
 }
 
