@@ -30,8 +30,6 @@ function setup() {
             facingMode: "environment"
         },
          mandatory: {
-            minWidth: displayWidth,
-            minHeight: displayWidth,
             framerate: 60
         }
     };
