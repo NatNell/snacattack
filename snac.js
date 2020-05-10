@@ -59,7 +59,7 @@ function draw() {
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
-    text(label, width / 2, height - 290);
+    text(label, width / 2, height - 310);
 
     //draw price label
     fill(167,42,42);
