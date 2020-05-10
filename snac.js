@@ -74,13 +74,13 @@ function draw() {
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
-    text(totalprice + total, width / 2,  height - 260);
-    
+    text(totalprice + total, width / 2,  height - 250);
+
     // button add to cart
     button = createButton("Add To Cärt");
     button.size(260 , 42)
     button.position(width / 2, height - 230);
-    button.mousePressed(changeBG);
+    button.mousePressed(total + 0.5);
 }
 
 // Get a prediction for the current video frame
@@ -103,7 +103,7 @@ function gotResult(error, results,) {
      price = 0.5;
      }
      else{
-     label = ".  .  .";
+     label = "·  ·  ·";
      price = 0;
      }
      flippedVideo.remove();
