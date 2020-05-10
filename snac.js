@@ -14,6 +14,8 @@ let Lato;
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
     img = loadImage('data/logo.jpg');
+    add = loadImage('data/add.jpg');
+    reset = loadImage('data/reset.jpg');
     Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
@@ -75,17 +77,27 @@ function draw() {
     textSize(25);
     textAlign(CENTER, CENTER);
     text(totalprice + total, width / 2,  height - 250);
-
+     
     // button add to cart
-    button = createButton("Add To Cärt");
-    button.size(260 , 42)
-    button.position(width / 2 - 130, height - 230);
-    button.mousePressed(addtotal);
+    button = createImg(add);
+    button.position(width / 2 + 10 , height - 230);
+    button.mousePressed(addition);
+   
+    // button reset to cart
+    button = createImg(reset);
+    button.position(width / 2 - 140, height - 230);
+    button.mousePressed(addremove);
+
 }
 
-// Get function for adding price up
-function addtotal() {
-    total = + 0.5;   
+// Get function for adding item to cart
+function addition() {
+     total = total + 0.5;   
+}
+ 
+// Get function for remove item from cart
+function addremove() {
+     total = 0;   
 }
 
 // Get a prediction for the current video frame
