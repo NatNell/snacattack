@@ -83,7 +83,7 @@ function draw() {
    
     // button reset to cart
     button = createImg('data/reset1x.png');
-    button.position(width / 2 - 138, height - 230);
+    button.position(width / 2 - 122, height - 230);
     button.mousePressed(addremove);
 }
 
