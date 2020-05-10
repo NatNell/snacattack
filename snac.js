@@ -64,10 +64,10 @@ function draw() {
     textAlign(CENTER, CENTER);
     text(total + price, width / 2,  height - 180);
 
-    button = createButton('Scan');
+    let button = createButton('Scan');
     button.center();
     button.position(width / 2, height -150);
-    button.mousePressed(changeBG);
+    button.mousePressed();
 }
 
 // Get a prediction for the current video frame
@@ -79,6 +79,7 @@ function classifyVideo() {
 // When we get a result
 function gotResult(error, results,) {
      // If there is an error
+     setInterval(gotResult, 2000);
      if (error) {
         console.error(error);
         return;
