@@ -78,8 +78,9 @@ function draw() {
 
     // button add to cart
     button = createButton("Add To Cärt");
+    button.style(lato)
     button.size(260 , 42)
-    button.position(width / 2, height - 230);
+    button.position(width / 2 - 130, height - 230);
     button.mousePressed(total + 0.5);
 }
 
