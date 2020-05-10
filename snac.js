@@ -67,14 +67,13 @@ function draw() {
     let button = createButton('Scan');
     button.center();
     button.position(width / 2, height -150);
-    button.mousePressed();
+    button.mousePressed(gotResult);
 }
 
 // Get a prediction for the current video frame
 function classifyVideo() {
     flippedVideo = ml5.flipImage(video)
     classifier.classify(flippedVideo, gotResult);
-    setInterval(classifyVideo, 2000);
 }
 
 // When we get a result
