@@ -74,24 +74,27 @@ function draw() {
 function classifyVideo() {
     flippedVideo = ml5.flipImage(video)
     classifier.classify(flippedVideo, gotResult);
+    setInterval(classifyVideo, 2000);
 }
 
 // When we get a result
 function gotResult(error, results,) {
      // If there is an error
-     setInterval(gotResult, 2000);
      if (error) {
-        console.error(error);
-        return;
+         console.error(error);
+         return;
     }
      // The results are in an array ordered by confidence.
     // console.log(results[0]);
      if (results[0].confidence>.9){
      label = (results[0].label);
      price = (price + 1);
-     setInterval(price, 4000);
      }
      else{
      label = ".  .  .";
      }
+     flippedVideo.remove();
+     // Classifiy again!
+     classifyVideo();
 }
+
