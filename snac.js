@@ -94,7 +94,4 @@ function gotResult(error, results,) {
      else{
      label = ".  .  .";
      }
-     flippedVideo.remove();
-     // Classifiy again!
-     classifyVideo();
-    }
+}
