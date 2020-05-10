@@ -75,7 +75,7 @@ function draw() {
 
     let button = createButton('Add to Cärt');
     button.position(width / 2, height -210);
-    button.mousePressed(total + price);
+    button.mousePressed(total + 0.5);
 }
 
 // Get a prediction for the current video frame
