@@ -80,12 +80,12 @@ function draw() {
      
     // button add to cart
     button = createImg(add);
-    button.position(width / 2 + 10 , height - 230);
+    button.position(width / 2 + 8 , height - 230);
     button.mousePressed(addition);
    
     // button reset to cart
     button = createImg(reset);
-    button.position(width / 2 - 140, height - 230);
+    button.position(width / 2 - 138, height - 230);
     button.mousePressed(addremove);
 
 }
