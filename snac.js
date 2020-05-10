@@ -64,9 +64,9 @@ function draw() {
     textAlign(CENTER, CENTER);
     text(total + price, width / 2,  height - 180);
 
-    //scan button
-    button = createButton('Scän');
-    button.position(width/2, height - 100);
+    button = createButton('Scan');
+    button.center();
+    button.position(width / 2, height -150);
     button.mousePressed(changeBG);
 }
 
