@@ -74,7 +74,7 @@ function classifyVideo() {
 // When we get a result
 function gotResult(error, results,) {
      // If there is an error
-     setInterval(gotResult, 2000);
+     setInterval(gotResult, 10000);
      if (error) {
         console.error(error);
         return;
