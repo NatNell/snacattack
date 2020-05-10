@@ -14,8 +14,8 @@ let Lato;
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
     img = loadImage('data/logo.jpg');
-    add = loadImage('data/add.jpg');
-    reset = loadImage('data/reset.jpg');
+    add = loadImage('data/add1x.png');
+    reset = loadImage('data/reset1x.png');
     Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
