@@ -17,8 +17,11 @@ function preload() {
     Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
-let total = "Totäl : $"
+let pricing = "Price : $"
 var price = 0;
+
+let totalprice = "Totäl : $"
+var total = 0;
 
 function setup() {
     createCanvas(displayWidth, displayHeight);
@@ -57,17 +60,23 @@ function draw() {
     textSize(25);
     textAlign(CENTER, CENTER);
     text(label, width / 2, height - 220);
-    //draw total price label
+    //draw price label
     fill(167,42,42);
     textFont(Lato);
     textSize(20);
     textAlign(CENTER, CENTER);
-    text(total + price, width / 2,  height - 180);
+    text(pricing + price, width / 2,  height - 180);
+     //draw total price label
+     fill(167,42,42);
+     textFont(Lato);
+     textSize(20);
+     textAlign(CENTER, CENTER);
+     text(ptotalprice + total, width / 2,  height - 150);
 
-    let button = createButton('Scan');
-    button.center();
+    let button = createButton('Add to Cärt');
+    button.size(316, 51)
     button.position(width / 2, height -150);
-    button.mousePressed(gotResult);
+    button.mousePressed(total + price);
 }
 
 // Get a prediction for the current video frame
@@ -87,10 +96,11 @@ function gotResult(error, results,) {
     // console.log(results[0]);
      if (results[0].confidence>.9){
      label = (results[0].label);
-     price = (price + 1);
+     price = 0.5;
      }
      else{
      label = ".  .  .";
+     price = 0;
      }
      flippedVideo.remove();
      // Classifiy again!
