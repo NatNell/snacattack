@@ -22,7 +22,7 @@ var price = 0;
 
 // pricing LABEL
 let totalprice = "Totäl : $"
-var ptotal = 0;
+var total = 0;
 
 function setup() {
     createCanvas(displayWidth, displayHeight);
