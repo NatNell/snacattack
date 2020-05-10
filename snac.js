@@ -60,17 +60,17 @@ function draw() {
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
-    text(label, width / 2, height - 220);
+    text(label, width / 2, height - 280);
     //draw price label
     fill(167,42,42);
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
-    text(pricing + price, width / 2,  height - 250);
+    text(pricing + price, width / 2,  height - 310);
     //draw total label
     fill(167,42,42);
     textFont(Lato);
-    textSize(20);
+    textSize(25);
     textAlign(CENTER, CENTER);
     text(totalprice + total, width / 2,  height - 180);
 }
