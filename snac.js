@@ -61,18 +61,26 @@ function draw() {
     textSize(25);
     textAlign(CENTER, CENTER);
     text(label, width / 2, height - 290);
+
     //draw price label
     fill(167,42,42);
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
     text(pricing + price, width / 2,  height - 320);
+
     //draw total label
     fill(167,42,42);
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
     text(totalprice + total, width / 2,  height - 260);
+    
+    // button add to cart
+    button = createButton("Add To Cärt");
+    button.size(260 , 42)
+    button.position(width / 2, height - 230);
+    button.mousePressed(changeBG);
 }
 
 // Get a prediction for the current video frame
