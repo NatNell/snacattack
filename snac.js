@@ -72,7 +72,7 @@ function draw() {
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
-    text(totalprice + total, width / 2,  height - 180);
+    text(totalprice + total, width / 2,  height - 250);
 }
 
 // Get a prediction for the current video frame
