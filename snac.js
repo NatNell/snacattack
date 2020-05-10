@@ -80,7 +80,12 @@ function draw() {
     button = createButton("Add To Cärt");
     button.size(260 , 42)
     button.position(width / 2 - 130, height - 230);
-    button.mousePressed(total + 0.5);
+    button.mousePressed(addtotal);
+}
+
+// Get function for adding price up
+function addtotal() {
+    total = + 0.5;   
 }
 
 // Get a prediction for the current video frame
