@@ -17,8 +17,12 @@ function preload() {
     Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
-let total = "Totäl : $"
+let pricing = "Price : $"
 var price = 0;
+
+// pricing LABEL
+let totalprice = "Totäl : $"
+var ptotal = 0;
 
 function setup() {
     createCanvas(displayWidth, displayHeight);
@@ -57,12 +61,18 @@ function draw() {
     textSize(25);
     textAlign(CENTER, CENTER);
     text(label, width / 2, height - 220);
-    //draw total price label
+    //draw price label
     fill(167,42,42);
     textFont(Lato);
-    textSize(20);
+    textSize(25);
     textAlign(CENTER, CENTER);
-    text(total + price, width / 2,  height - 180);
+    text(pricing + price, width / 2,  height - 240);
+     //draw total label
+     fill(167,42,42);
+     textFont(Lato);
+     textSize(20);
+     textAlign(CENTER, CENTER);
+     text(totalprice + total, width / 2,  height - 180);
 }
 
 // Get a prediction for the current video frame
