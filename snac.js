@@ -14,8 +14,6 @@ let Lato;
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
     img = loadImage('data/logo.jpg');
-    add = loadImage('data/add1x.png');
-    reset = loadImage('data/reset1x.png');
     Lato = loadFont('data/Lato-Semibold.ttf');
 }
 // pricing LABEL
@@ -79,12 +77,12 @@ function draw() {
     text(totalprice + total, width / 2,  height - 250);
      
     // button add to cart
-    button = createImg(add);
+    button = createImg('data/add1x.png');
     button.position(width / 2 + 8 , height - 230);
     button.mousePressed(addition);
    
     // button reset to cart
-    button = createImg(reset);
+    button = createImg('data/reset1x.png');
     button.position(width / 2 - 138, height - 230);
     button.mousePressed(addremove);
 }
