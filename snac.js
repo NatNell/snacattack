@@ -89,6 +89,7 @@ function gotResult(error, results,) {
      if (results[0].confidence>.9){
      label = (results[0].label);
      price = (price + 1);
+     setInterval(price, 4000);
      }
      else{
      label = ".  .  .";
