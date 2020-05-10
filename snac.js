@@ -87,7 +87,6 @@ function draw() {
     button = createImg(reset);
     button.position(width / 2 - 138, height - 230);
     button.mousePressed(addremove);
-
 }
 
 // Get function for adding item to cart
