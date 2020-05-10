@@ -74,8 +74,7 @@ function draw() {
      text(ptotalprice + total, width / 2,  height - 150);
 
     let button = createButton('Add to Cärt');
-    button.size(316, 51)
-    button.position(width / 2, height -150);
+    button.position(width / 2, height -210);
     button.mousePressed(total + price);
 }
 
