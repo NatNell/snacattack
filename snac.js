@@ -66,7 +66,7 @@ function draw() {
     textFont(Lato);
     textSize(25);
     textAlign(CENTER, CENTER);
-    text(pricing + price, width / 2,  height - 240);
+    text(pricing + price, width / 2,  height - 250);
     //draw total label
     fill(167,42,42);
     textFont(Lato);
@@ -101,4 +101,4 @@ function gotResult(error, results,) {
      flippedVideo.remove();
      // Classifiy again!
      classifyVideo();
-    }
+}
