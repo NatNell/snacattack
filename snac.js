@@ -56,7 +56,7 @@ function draw() {
     image(video, 0, 0);
 
     // camera focus overlay
-    image(img, width/2 , 475)
+    image(img, width/2 , 475);
 
     // Draw the label
     fill(167,42,42);
