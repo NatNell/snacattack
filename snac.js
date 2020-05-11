@@ -29,7 +29,6 @@ function setup() {
     // Create the video
     //video = createCapture(VIDEO);
     // camera focus overlay
-    image(img, width/2 , 475); 
 
     var constraints = {
         audio: false,
