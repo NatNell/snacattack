@@ -57,9 +57,6 @@ function draw() {
     // Draw the video
     image(video, 0, 0);
 
-    // camera focus overlay
-    image(img, width/2 - 20, 475);
-
     // Draw the label
     fill(167,42,42);
     textFont(Lato);
