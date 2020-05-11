@@ -48,8 +48,7 @@ function setup() {
     flippedVideo = ml5.flipImage(video)
     // Start classifying
     classifyVideo();
-
-    
+  
 }
 
 function draw() {
