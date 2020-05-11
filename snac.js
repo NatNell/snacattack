@@ -30,6 +30,7 @@ function setup() {
     //video = createCapture(VIDEO);
     // camera focus overlay
 
+
     var constraints = {
         audio: false,
         video: {
@@ -48,7 +49,8 @@ function setup() {
     flippedVideo = ml5.flipImage(video)
     // Start classifying
     classifyVideo();
-  
+
+    
 }
 
 function draw() {
