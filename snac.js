@@ -14,6 +14,7 @@ let Lato;
 function preload() {
     classifier = ml5.imageClassifier(imageModelURL + 'model.json');
     Lato = loadFont('data/Lato-Semibold.ttf');
+    img = loadimage('data/camera.png');
 }
 // pricing LABEL
 let pricing = "Price : $"
@@ -53,6 +54,9 @@ function draw() {
     background(245);
     // Draw the video
     image(video, 0, 0);
+
+    // camera focus overlay
+    image(img, width/2 , 475)
 
     // Draw the label
     fill(167,42,42);
