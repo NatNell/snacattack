@@ -28,7 +28,8 @@ function setup() {
     createCanvas(displayWidth, displayHeight);
     // Create the video
     //video = createCapture(VIDEO);
-    
+    // camera focus overlay
+    image(img, width/2 , 475); 
 
     var constraints = {
         audio: false,
@@ -48,15 +49,14 @@ function setup() {
     flippedVideo = ml5.flipImage(video)
     // Start classifying
     classifyVideo();
+
+    
 }
 
 function draw() {
     background(245);
     // Draw the video
     image(video, 0, 0);
-
-    // camera focus overlay
-    image(img, width/2 , 475);
 
     // Draw the label
     fill(167,42,42);
