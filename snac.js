@@ -37,8 +37,8 @@ function setup() {
             facingMode: "environment"
         },
          mandatory: {
-            minWidth: 1920,
-            minHeight: 1080,
+            minWidth: 1280,
+            minHeight: 720,
             minframerate: 30
         }
     };
@@ -115,7 +115,7 @@ function gotResult(error, results,) {
     }
      // The results are in an array ordered by confidence.
     // console.log(results[0]);
-     if (results[0].confidence>.9){
+     if (results[0].confidence>.8){
      label = (results[0].label);
      price = 0.5;
      }
