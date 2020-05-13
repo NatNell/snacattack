@@ -92,7 +92,7 @@ function draw() {
 
 // Get function for adding item to cart
 function addition() {
-     total = total + 0.5;   
+     total = total + 0.1;   
 }
  
 // Get function for remove item from cart
@@ -117,7 +117,7 @@ function gotResult(error, results,) {
     // console.log(results[0]);
      if (results[0].confidence>.8){
      label = (results[0].label);
-     price = 0.5;
+     price = 0.1;
      }
      else{
      label = "·  ·  ·";
