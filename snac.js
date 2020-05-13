@@ -37,8 +37,8 @@ function setup() {
             facingMode: "environment"
         },
          mandatory: {
-            minWidth: 1280,
-            minHeight: 720,
+            minWidth: 1920,
+            minHeight: 1080,
             minframerate: 30
         }
     };
